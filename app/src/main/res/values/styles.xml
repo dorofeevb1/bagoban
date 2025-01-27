@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Bogoban" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorBarBG</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Bogoban.Launcher" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
+    <style name="Bogoban.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Ball">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">@string/stone</item>
+    </style>
+
+    <style name="BallBig" parent="Ball">
+        <item name="android:layout_weight">2</item>
+    </style>
+
+<!--    <style name="BallMiddle" parent="Ball">-->
+<!--        <item name="android:layout_weight">1</item>-->
+<!--    </style>-->
+
+<!--    <style name="BallSmall" parent="Ball">-->
+<!--        <item name="android:layout_weight">0.5</item>-->
+<!--    </style>-->
+
+    <style name="BallSeparator">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/separator</item>
+        <item name="android:contentDescription">@string/separator</item>
+    </style>
+
+    <style name="BallEdgeSeparator" parent="BallSeparator">
+        <item name="android:src">@drawable/separator_edge</item>
+        <item name="android:contentDescription">@string/separator</item>
+        <item name="android:layout_weight">4.4</item>
+    </style>
+
+    <style name="BallVerticalEdgeSeparator" parent="BallEdgeSeparator">
+        <item name="android:layout_weight">4.6</item>
+    </style>
+
+<!--    <style name="BallEdgeMiddleSeparator" parent="BallEdgeSeparator">-->
+<!--        <item name="android:layout_weight">2.3</item>-->
+<!--    </style>-->
+
+<!--    <style name="BallEdgeSmallSeparator" parent="BallEdgeSeparator">-->
+<!--        <item name="android:layout_weight">2.2</item>-->
+<!--    </style>-->
+
+    <style name="ActionButton">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+    <color name="purple_500">#FF6200EE</color>
+</resources>

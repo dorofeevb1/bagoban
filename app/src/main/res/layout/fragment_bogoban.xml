@@ -1,0 +1,1299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bogobanWrap"
+    tools:context=".BogobanFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/coordinatesTableContainerView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/stonesBasketContainerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/coordinatesTableImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/coordinates_table"
+            android:src="@drawable/background1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/coordinatesTableImageView"
+            app:layout_constraintEnd_toEndOf="@+id/coordinatesTableImageView"
+            app:layout_constraintStart_toStartOf="@+id/coordinatesTableImageView"
+            app:layout_constraintTop_toTopOf="@+id/coordinatesTableImageView">
+
+            <ImageView style="@style/BallVerticalEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+            <LinearLayout
+                android:id="@+id/row0ContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell00ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_white" />
+
+                <ImageView
+                    android:id="@+id/etalonWidthSeparatorView"
+                    style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell01ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_black" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell02ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_red" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell03ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_orange" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell04ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_yellow" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell05ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_green" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell06ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_cyan" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell07ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_blue" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell08ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_purple" />
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/etalonHeightSeparatorView"
+                style="@style/BallSeparator"
+                android:contentDescription="@string/separator" />
+
+            <LinearLayout
+                android:id="@+id/row1ContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell10ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_white" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell11ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_black" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell12ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_red" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell13ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_orange" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell14ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_yellow" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell15ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_green" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell16ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_cyan" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell17ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_blue" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell18ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_purple" />
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+            <LinearLayout
+                android:id="@+id/row2ContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell20ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_white" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell21ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_black" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell22ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_red" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell23ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_orange" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell24ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_yellow" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell25ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_green" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell26ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_cyan" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell27ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_blue" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell28ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_purple" />
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+            <LinearLayout
+                android:id="@+id/row3ContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell30ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_white" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell31ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_black" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell32ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_red" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell33ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_orange" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell34ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_yellow" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell35ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_green" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell36ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_cyan" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell37ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_blue" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell38ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_purple" />
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+            <LinearLayout
+                android:id="@+id/row4ContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell40ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_white" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell41ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_black" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell42ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_red" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell43ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_orange" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell44ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_yellow" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell45ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_green" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell46ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_cyan" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell47ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_blue" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell48ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_purple" />
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+            <LinearLayout
+                android:id="@+id/row5ContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell50ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_white" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell51ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_black" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell52ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_red" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell53ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_orange" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell54ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_yellow" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell55ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_green" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell56ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_cyan" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell57ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_blue" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell58ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_purple" />
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+            <LinearLayout
+                android:id="@+id/row6ContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell60ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_white" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell61ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_black" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell62ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_red" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell63ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_orange" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell64ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_yellow" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell65ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_green" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell66ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_cyan" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell67ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_blue" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell68ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_purple" />
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+            <LinearLayout
+                android:id="@+id/row7ContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell70ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_white" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell71ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_black" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell72ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_red" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell73ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_orange" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell74ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_yellow" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell75ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_green" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell76ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_cyan" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell77ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_blue" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell78ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_purple" />
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+            <LinearLayout
+                android:id="@+id/row8ContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell80ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_white" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell81ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_black" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell82ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_red" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell83ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_orange" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell84ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_yellow" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell85ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_green" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell86ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_cyan" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell87ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_blue" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/cell88ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_purple" />
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/BallVerticalEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/stonesBasketContainerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/actionButtonsContainerView"
+        app:layout_constraintEnd_toEndOf="@+id/coordinatesTableContainerView"
+        app:layout_constraintStart_toStartOf="@+id/coordinatesTableContainerView">
+
+        <ImageView
+            android:id="@+id/proportionsImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/balls_proportions"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/stone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/proportionsImageView"
+            app:layout_constraintEnd_toEndOf="@+id/proportionsImageView"
+            app:layout_constraintStart_toStartOf="@+id/proportionsImageView"
+            app:layout_constraintTop_toTopOf="@+id/proportionsImageView">
+
+            <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+            <LinearLayout
+                android:id="@+id/bigBallsContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballBig1ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_white" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballBig2ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_black" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballBig3ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_red" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballBig4ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_orange" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballBig5ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_yellow" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballBig6ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_green" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballBig7ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_cyan" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballBig8ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_blue" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballBig9ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_purple" />
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+            <LinearLayout
+                android:id="@+id/middleBallsContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballMiddle1ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_white_middle" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballMiddle2ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_black_middle" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballMiddle3ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_red_middle" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballMiddle4ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_orange_middle" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballMiddle5ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_yellow_middle" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballMiddle6ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_green_middle" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballMiddle7ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_cyan_middle" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballMiddle8ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_blue_middle" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballMiddle9ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_purple_middle" />
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+            <LinearLayout
+                android:id="@+id/smallBallsContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballSmall1ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_white_small" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballSmall2ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_black_small" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballSmall3ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_red_small" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballSmall4ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_orange_small" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballSmall5ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_yellow_small" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballSmall6ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_green_small" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballSmall7ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_cyan_small" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballSmall8ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_blue_small" />
+
+                <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+                <ImageView
+                    android:id="@+id/ballSmall9ImageView"
+                    style="@style/BallBig"
+                    android:contentDescription="@string/stone"
+                    android:src="@drawable/ball_purple_small" />
+
+                <ImageView style="@style/BallEdgeSeparator"
+                    android:contentDescription="@string/separator" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/BallSeparator"
+                    android:contentDescription="@string/separator" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/actionButtonsContainerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/saveImageButton"
+            style="@style/ActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/icon_save"
+            android:contentDescription="@string/save" />
+
+        <ImageButton
+            android:id="@+id/clearImageButton"
+            style="@style/ActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/icon_clear"
+            android:contentDescription="@string/clear" />
+
+        <ImageButton
+            android:id="@+id/colorImageButton"
+            style="@style/ActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/icon_colors"
+            android:contentDescription="@string/color" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/draggableBallContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/draggableBallImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/stone"
+            android:src="@drawable/ball_blue" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

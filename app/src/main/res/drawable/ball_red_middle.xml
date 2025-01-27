@@ -1,0 +1,20 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:width="13dp" android:height="13dp" />
+        </shape>
+    </item>
+    <item android:top="2dp" android:right="2dp" android:bottom="2dp" android:left="2dp">
+        <shape android:shape="oval">
+            <gradient
+                android:centerX="0.6"
+                android:centerY="0.35"
+                android:gradientRadius="20"
+                android:startColor="#fff"
+                android:centerColor="#a00"
+                android:endColor="#000"
+                android:type="radial" />
+            <size android:width="9dp" android:height="9dp" />
+        </shape>
+    </item>
+</layer-list>

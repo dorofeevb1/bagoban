@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">BoGoban</string>
+
+    <string name="bogoban">BoGoban</string>
+    <string name="sets">Sets</string>
+    <string name="help">Auskunft</string>
+    <string name="set_name">Set</string>
+    <string name="sets_empty">Du hast noch kein set gespeichert</string>
+    <string name="stone">Stein</string>
+    <string name="separator">Trennzeichen</string>
+    <string name="coordinates_table">Koordinatennetz</string>
+    <string name="save">Speichern</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="clear">Klar</string>
+    <string name="color">Ändern Sie die Farbe des Rasters</string>
+    <string name="save_popup_title">Einen Satz speichern</string>
+    <string name="save_my_set">Mein Set</string>
+
+    <string-array name="help_titles">
+        <item>Was ist das BoGoban?</item>
+        <item>Autor des Modells</item>
+        <item>Kurzanleitung</item>
+        <item>Erweiterten Kommentaren</item>
+    </string-array>
+    <string-array name="help_contents">
+        <item><![CDATA[BoGoban – ist eine projektive Methode, die aus der Synthese der Theorie von Paradigmatischer Analyse (Metamodern) von Pavel Piskarev einerseits und aus den Geisteswissenschaften (Philosophie, Psychologie, Semantik, Existentieller Ansatz und Coaching) sowie den Spielregeln des Spiels „Go“ entstanden ist.
+<br /><br />Dieses effektive Modell, das unser Leben einfacher macht, ist einerseits sehr einfach, anderseits aber sehr tiefgehend und fordert uns auf, die kompliziertesten Lebensaufgaben zu lösen.
+<br /><br />Bei der Arbeit mit diesem Modell wird Schritt für Schritt eine große Anzahl von neuronalen Verbindungen aktiviert, die zur Lösung der gestellten Aufgabe (des Themas) führen. BoGoban ermöglicht sowohl eine Diagnostik des aktuellen Projektzustands als auch die Korrektur des Zustands, wenn Sie mit etwas nicht zufrieden sind.]]>
+        </item>
+        <item><![CDATA[Autor des Modells: Pavel Piskarev
+
+            <br /><br />Doktor der Psychologie, Professor.
+            <br />Begründer des Instituts für Kreativitätspsychologie.
+            <br />Autor von NeuroGraphik, der Entwicklungspyramide und überhaupt - der Autor!
+            <br />Künstler und glücklicher Mann!
+
+            <br /><br />Persönliche Website des Autors:
+            <br /><a href="https://www.piskarev.ru/">piskarev.ru</a>
+
+            <br /><br />Veranstaltungskalender:
+            <br /><a href="https://www.neurograff.com/calendar">neurograff.com/calendar</a>
+
+            <br /><br />Seite über Metamoderne Theorie:
+            <br /><a href="https://www.metamodern.ru/">metamodern.ru</a>
+
+            <br /><br />BoGoban Video-Tutorial und Metamodern Bildschirme-App:
+            <br /><a href="https://www.metamodern.ru/application">metamodern.ru/application</a>]]>
+        </item>
+        <item><![CDATA[1) Wählen Sie ein Thema aus (Aufgabe für einen Tag, ein Ziel für einen Monat, ein Jahresprojekt, der Lebenssinn).
+            <br />2) Stellen Sie sich einen der Metamodern-Bildschirme vor, der Ihrer Meinung nach am besten zu Ihrem Thema passt oder arbeiten Sie mit einem leeren Feld.
+            <br />3) Stellen Sie die Steine auf, verschieben Sie sie, entfernen Sie sie, fügen Sie neue hinzu, und folgen Sie Ihren Gedanken, Emotionen und Gefühlen in Ihrem Körper, fixieren Sie Ideen auf dem Blatt.
+            <br />4) Wenn Sie das Layout speichern möchten, klicken Sie einfach auf das Diskettensymbol unter dem BoGoban-Arbeitsbereich und geben Sie einen Themennamen an. Um die Aufstellung zu einem späteren Zeitpunkt wieder zu öffnen, öffnen Sie den Bereich Sets und klicken auf das gewünschte Thema.
+            <br />5) Wenn Sie einen Case (eine Reihe von Aufstellungen zum gleichen Thema) weiterführen, kann es hilfreich sein, jedes Aufstellungsschema zu speichern, das Ihnen den gewünschten Zwischeneffekt gebracht hat. Auf diese Weise können Sie die Dynamik des Falles während der Lösung und nach Abschluss des Falles betrachten.]]>
+        </item>
+        <item><![CDATA[Eine Möglichkeit, mit dem Instrument zu arbeiten, besteht darin, einen Stein in den einen oder in den anderen Quadranten zu setzen, geleitet von der Frage: "Wo existiert unser Projekt bereits und wo wollen wir es als nächstes haben?". Mit anderen Worten: Wir bestimmen die Position eines Steins durch ein Symptom und ein gewünschtes Ergebnis.
+<br />Genauso stellen wir eine Idee von Zielen vor: "Möchte ich existieren? Wenn - ja, wo?" Und als Konsequenz daraus konstruieren wir ein bestimmtes Feld von Interaktionen, ein Feld der Selbstbestimmtheit. Das heißt, wir analysieren uns und das Projekt unter den Gesichtspunkten "Ich will oder ich will nicht", "Wo stehe ich?“ und „Was brauche ich?“. Als Ergebnis erhalten wir eine Komposition von Steinen auf dem Brett.
+<br />Bei dieser Technik bedeutet ein weißer Stein oder wenn Sie grafisch zeichnen, ein hohler Kreis, -: "Ich möchte dort sein" und der schwarze Stein bedeutet "ich bin bereits dort" oder "dieses Phänomen existiert in meinem Leben". Wenn wir zeichnen, malen wir den Kreis aus. Auch hier fragen wir uns bei der Arbeit auf dem Brett: "Bin ich in diesem oder jenem Quadranten oder will ich dort sein?"
+
+            <br /><br />Wenn jemand z. B. einen athletischen Körper aufbauen will, legt er einen weißen Stein in den I. Quadranten des Bildschirms ("Körper"), bei  grafischem Arbeiten zeichnet er einen hohlen Kreis im ersten Sektor des Quadrats, am Schnittpunkt von Linien (Achsen). Und wenn jemand mehr Meditation üben will, setzt er einen weißen Stein in den vierten Quadrant, so als ob er verkündet: "Ich möchte hier, im IV. Quadranten mehr Bewusstheit haben.“ So stellt und beantwortet jeder seine eigenen Fragen und spürt die Reflexion seiner Handlungen im Körper. Somit wird dieser Mensch zum Berater für sich selbst, indem er laut durch den BoGoban reflektiert.
+            <br />Auch hier gilt: Je mehr wir das Feld in diesem oder jenem Fenster besetzen, desto mehr bringen wir unser Interesse und unsere Aufmerksamkeit dorthin. Wohlgemerkt: Alles, was bereits existiert, ist ein Symptom, d.h. der aktuelle Zustand des Menschen, seine Seins-Ressource, unabhängig davon, ob diese Ressource positiv oder negativ ist. Unter dem Gesichtspunkt "Neuro" ist die negative Ressource noch stärker als die positive. Alles Negative arbeitet härter, strebt nach Erkenntnis und erinnert öfter an sich selbst.
+            <br /><br />Beim BoGoban verwendet man auch eine Technik, um mit "Schatten" und "Licht" zu arbeiten. Der Lichtteil ist das Realisierte, Offensichtliche, Manifestierte und Klare. Auf dem Brett stellen dies die weißen Steine dar. Dementsprechend ist der "Schatten" der nicht realisierte Teil, in dem das Potenzial liegt. Auf dem Brett stellen dies die schwarzen Steine dar. Sie symbolisieren die Energie dessen, was wir brauchen, aber es ist uns noch nicht klar. So entsprechen z.B. schwarze Steine den "Schatten"-Problemen bzw. wie viele unrealisierte Momente in einem Projekt vorhanden sind. Mit anderen Worten: Man kann mit dem Schatten und den bereits manifestierten Teilen eines Projekts durch Steine arbeiten. Durch das Verschieben der Steine auf dem Metamoderne-Bildschirm kann man dabei zum Empfinden der Stabilität oder umgekehrt - der Entwicklung - kommen. Alles hängt von der Aufgabe des Projekts ab.
+<br />Wir können auf dem Brett die Aufstellung einer Entwicklung machen, indem wir absichtlich den Zustand der Stabilität in einen Zustand des angenehmen Antriebs (Drive-Zustand) verlagern, wenn man das Gefühl hat: es zieht mich dorthin. Aber wir lassen uns nicht einfach "irgendwo hinziehen", sondern in eine von uns streng vorgegebene Richtung, gemäß der Theorie der Paradigmatischen Analyse. Wir konstruieren die Route unserer Bewegung selbst und verstehen, dass hinter jedem Quadranten eine ganze Reihe von Bedeutungen stecken. Übrigens: bei einer anderen Technik ist der schwarze Stein die Frage und der weiße Stein die Antwort. Es gibt viele Interpretationen und Möglichkeiten, was die professionelle Anwendung von BoGoban angeht.]]>
+        </item>
+    </string-array>
+
+</resources>
